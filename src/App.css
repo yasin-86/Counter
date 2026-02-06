@@ -9,6 +9,10 @@ body {
   align-items: center;
   min-height: 100vh;
 }
+.light .box{
+  background-color: #fff;
+}
+
 
 .box {
   display: flex;
@@ -33,6 +37,12 @@ body {
   border-radius: 10px;
   background-color: rgba(30, 30, 30, 0.5);
 }
+.light .box h1{
+  color: #121212;
+  border: 1px solid #121212;
+  text-shadow: none;
+  background-color: white;
+}
 
 .div {
   display: flex;
@@ -53,43 +63,15 @@ body {
   min-width: 70px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
-.button:not([style*="background-color"]):nth-child(odd) {
-  background-color: #3498db;
-  color: white;
-  box-shadow: 0 5px #2980b9;
+
+.button{
+  background-color: #333;
+  color: #00ff99;
 }
 
-.button:not([style*="background-color"]):nth-child(even) {
-  background-color: #e67e22;
-  color: white;
-  box-shadow: 0 5px #d35400;
+.light .button{
+  background-color: #fff;
+  color: #121212;
 }
 
-.button:not([style*="background-color"]):nth-child(odd):hover {
-  background-color: #2980b9;
-  transform: translateY(-3px);
-  box-shadow: 0 8px #1f618d;
-}
 
-.button:not([style*="background-color"]):nth-child(even):hover {
-  background-color: #d35400;
-  transform: translateY(-3px);
-  box-shadow: 0 8px #a04000;
-}
-
-.button[style*="background-color: #dc3545"] {
-  background-color: #c0392b !important;
-  color: white;
-  box-shadow: 0 5px #922b21 !important;
-}
-
-.button[style*="background-color: #dc3545"]:hover {
-  background-color: #a93226 !important;
-  transform: translateY(-3px);
-  box-shadow: 0 8px #78281f !important;
-}
-
-.button:active {
-  transform: translateY(4px);
-  box-shadow: 0 1px rgba(0, 0, 0, 0.4);
-}

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Button from "../Button/Button";
+import Change from "../Change/Change";
 
 function Buttonlist() {
 
@@ -56,7 +57,9 @@ function Buttonlist() {
         )
       })}
     </div>
+    <Change/>
       </div>
+      
   );
 }
 
