@@ -52,6 +52,7 @@ function Buttonlist() {
         return(
             <Button
             label={item.label}
+            key={item.label}
             handleclick={()=> handlebuttonclick(item.change)}
             />
         )

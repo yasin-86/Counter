@@ -1,19 +1,16 @@
-import { createContext, useState } from "react";
 import "./App.css";
 import Buttonlist from "./components/Buttonlist/Buttonlist";
-
-export const ThemeContext = createContext();
+import Root from "./components/Root/Root";
+import { ThemeContext } from "./Context/ThemeContext";
 
 function App() {
-  const [theme, setTheme] = useState("dark");
-
   return (
     <>
-      <ThemeContext.Provider value={{ theme, setTheme }}>
-        <div className={`${theme == "light" ? "light" : null }`}> 
+      <ThemeContext>
+        <Root>
           <Buttonlist />
-        </div>
-      </ThemeContext.Provider>
+        </Root>
+      </ThemeContext>
     </>
   );
 }

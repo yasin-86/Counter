@@ -1,8 +1,9 @@
-import React, { useContext } from "react";
-import { ThemeContext } from "../../App";
+
+import "./Change.css";
+import { useTheme } from "../../Context/ThemeContext";
 
 export const Change = () => {
-  const { theme, setTheme } = useContext(ThemeContext);
+  const { theme, setTheme } = useTheme();
 
   return (
     <button
@@ -10,7 +11,7 @@ export const Change = () => {
         width: "25%",
         padding: "5px",
         backgroundColor: "transparent",
-        color: "#a8a8a8",
+        color: "#00ff99",
         fontFamily: '"Digital Numbers", sans-serif',
         fontSize: "18px",
         margin: "5px 0",
@@ -22,7 +23,7 @@ export const Change = () => {
         setTheme((prevTheme) => (prevTheme == "dark" ? "light" : "dark"))
       }
     >
-      dark/Light
+      <p>dark/Light</p>
     </button>
   );
 };

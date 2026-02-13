@@ -12,7 +12,9 @@ body {
 .light .box{
   background-color: #fff;
 }
-
+.light{
+  background-color: #fff;
+}
 
 .box {
   display: flex;
@@ -25,13 +27,16 @@ body {
   background-color: #1e1e1e;
   max-width: 600px;
   width: 90%;
+  position: relative;
+  left: 28%;
+  top: 10%;
 }
 
 .box h1 {
   color: #00ff99;
   font-size: 3.5em;
   margin-bottom: 30px;
-  padding: 15px 30px;
+  padding: 15px 40px;
   text-shadow: 0 0 10px rgba(0, 255, 153, 0.8), 0 0 20px rgba(0, 255, 153, 0.5);
   border: 1px solid #00ff99;
   border-radius: 10px;
@@ -58,7 +63,6 @@ body {
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  transition: all 0.3s ease;
   font-weight: 600;
   min-width: 70px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
